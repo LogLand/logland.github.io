@@ -1,0 +1,36 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "image": [
+      "https://example.com/photos/1x1/photo.jpg",
+      "https://example.com/photos/4x3/photo.jpg",
+      "https://example.com/photos/16x9/photo.jpg"
+     ],
+    "name": "Logarhythmic Landscapes Ltd.",
+    "url": "https://www.logland.life",
+    "telephone": "+18254497424",
+    "description": "Arboriculture, horticulture, & general landscaping services. Independently owned & operated out of the foothills in south west Alberta.",
+    "keywords": "arborist, trees, landscaping, gardening, planting, pests",
+    "location": "Alberta, Saskatchewan, Calgary, Foothills County, Wheatland County, Rockyview County, Cypress County, Okotoks, Cochrane, High River, Longview, Diamond Valley, Bragg Creek, Nanton, Vulcan, Strathmore, Lethbridge, Fort Macleod, Pincher Creek, Crowsnest, Medicine Hat, Maple Creek, Swift Current",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday",
+          "Sunday"
+        ]
+      }
+    ]
+  }
