@@ -9,8 +9,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  // site: 'https://logland.life',
-  site: 'https://logland.github.io',
+  site: 'https://logland.life',
+  // site: 'https://logland.github.io',
   output: 'static',
   integrations: [mdx(), tailwind(), sitemap()],
   vite: {
