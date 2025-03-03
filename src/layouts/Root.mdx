@@ -1,0 +1,91 @@
++++
+
++++
+
+import App from '../App.astro'
+import Nav from '../components/Nav.mdx'
+import {Logo} from '../assets/logarhythmic_logo.png'
+
+<App title={props.frontmatter.title}>
+
+    <header id='body-header'>
+        <img id='logo' src='/assets/logarhythmic_logo.png' alt='Log Land Logo'/>
+    </header>
+
+    <main>
+    
+        <header id='main-header'>
+
+            <div id='tree-canopy-1-container'>
+                <div id='tree-canopy-1'>
+                    <div id='tree-canopy-1-shadow' />                
+                    <div id='tree-canopy-1-shadow-clip' />
+                </div>
+            </div>
+
+            <div id='tree-canopy-2-container'>
+                <div id='tree-canopy-2'>
+                    <div id='tree-canopy-2-shadow' />                
+                    <div id='tree-canopy-2-shadow-clip' />            
+                </div>
+            </div>
+
+            <div id='tree-canopy-3-container'>
+                <div id='tree-canopy-3'>
+                    <div id='tree-canopy-3-shadow' />                
+                    <div id='tree-canopy-3-shadow-clip' />  
+                </div>
+            </div>
+
+            <div id='tree-canopy-4-container'>
+                <div id='tree-canopy-4'>
+                    <div id='tree-canopy-4-shadow' />                
+                    <div id='tree-canopy-4-shadow-clip' /> 
+                </div>
+            </div>
+
+            <div id='tree-canopy-5-container'>
+                <div id='tree-canopy-5'>
+                    <div id='tree-canopy-5-shadow' />                
+                    <div id='tree-canopy-5-shadow-clip' /> 
+                </div>
+            </div>
+
+            <div id='tree-canopy-6-container'>
+                <div id='tree-canopy-6'>
+                    <div id='tree-canopy-6-shadow' />                
+                    <div id='tree-canopy-6-shadow-clip' /> 
+                </div>
+            </div>
+            
+        </header>
+
+        <div id='left-tree'>
+            <div />
+        </div>
+
+        <article>
+
+            <div id='frame'>  
+                 
+                <div id='title'>
+                    # {props.frontmatter.title}
+                </div>
+
+                <div id='content'>     
+
+                    {props.children}
+                </div>
+            
+            </div>
+        
+        </ article>
+
+        <div id='right-tree'>
+            <div />
+        </div>
+
+    </main>
+
+
+</ App>

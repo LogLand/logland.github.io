@@ -1,0 +1,40 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Nav from './components/Nav.mdx';
+
+import './styles/index.css'
+
+const {title} = Astro.props;
+
+---
+
+<!doctype html>
+
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+		<meta name="description" content="Logarhythmic Landscapes Ltd. Independently owned & operated out of the foothills in south west Alberta. Serving communities around the Bow River, from the Oldman to the Red Deer Rivers, and growing into the Clearwater and South Saskatchewan Rivers.">
+		<link rel="icon" type="image/x-icon" href="/logarhythmic_logo.ico" />
+		<meta name="generator" content={Astro.generator}>
+
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<script id="localbusiness-schema" type="application/ld+json" src="/local-business.json" />
+
+		<title>{title}</title>
+        
+        <ClientRouter />
+	
+    </head>
+
+	<body>
+		<slot />
+	</body>
+
+	<footer transition:persist>
+		<Nav />
+
+	</footer>
+
+</html>
